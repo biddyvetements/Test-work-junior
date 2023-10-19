@@ -28,15 +28,15 @@
 
 Пример запроса:
 
-`POST /api/questions/ HTTP/1.1
-Host: 212.193.51.197:3000
-Content-Type: application/json
-Content-Length: 20
-{"questions_num":10}`
+    POST /api/questions/ HTTP/1.1
+    Host: 212.193.51.197:3000
+    Content-Type: application/json
+    Content-Length: 20
+    {"questions_num":10}
 
 Пример ответа:
 
-`{
+    {
     "success": true,
     "latest_question": {
         "id": 143953,
@@ -57,4 +57,4 @@ Content-Length: 20
             "clues_count": 5
         }
     }
-} `
+    }
