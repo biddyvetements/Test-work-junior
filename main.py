@@ -30,25 +30,6 @@ class InsertQuestions(Resource):
 
         all_questions_db = session.query(Question.id).all()
 
-        list_questions_api.append({
-            "id": 2848,
-            "answer": "counterclockwise",
-            "question": "In the Northern Hemisphere, hurricane winds blow around the storm's eye in this direction",
-            "value": 300,
-            "airdate": "1986-02-06T20:00:00.000Z",
-            "created_at": "2022-12-30T18:38:46.514Z",
-            "updated_at": "2022-12-30T18:38:46.514Z",
-            "category_id": 457,
-            "game_id": 2263,
-            "invalid_count": None,
-            "category": {
-                "id": 457,
-                "title": "storms",
-                "created_at": "2022-12-30T18:38:46.447Z",
-                "updated_at": "2022-12-30T18:38:46.447Z",
-                "clues_count": 8
-            }
-        })
         latest_question = None
         list_to_add = []
         for question_item in list_questions_api:
