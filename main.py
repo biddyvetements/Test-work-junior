@@ -1,6 +1,4 @@
 import os
-import time
-from sqlalchemy.exc import IntegrityError
 import requests
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api, reqparse
@@ -51,4 +49,4 @@ api.add_resource(InsertQuestions, '/api/questions/')
 
 if __name__ == '__main__':
     global_init('postgresql://baeldung:baeldung@212.193.51.197/baeldung')
-    app.run(debug=True, host='127.0.0.1', port=os.environ.get('port', '3000'))
+    app.run(debug=True, host='0.0.0.0', port=os.environ.get('port', '3000'))
